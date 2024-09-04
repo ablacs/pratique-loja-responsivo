@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Abyssinica SIL';
+    src: url('./images/fonts/Abyssinica\ SIL.ttf')format('truetype');
+}
+body{
+    font-family: 'Abyssinica SIL', serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+.container img{
+    max-width: 20em;
+}
+.container nav ul li{
+    display: inline;
+    font-size: 1.5em;
+    padding: 8px;
+    background: linear-gradient(to right, #ff6cab, #3f5efb); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    margin: 0 10px;
+}
+h2 {
+    background: linear-gradient(to right, #ff6cab, #3f5efb);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2em;
+}
+.sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.1),
+    -10px -10px 10px white;
+
+}
+.sobre:hover{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.1) inset,
+    -10px -10px 10px white inset;
+}
+.coluna {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.coluna img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto {
+    flex: 1;
+    max-width: 50%;
+}
+
+.texto p {
+    margin-bottom: 15px;
+}
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom:1% ;
+    margin-bottom: 10%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.1),
+    -10px -10px 10px white;
+}
+.produtos:hover{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.1) inset,
+    -10px -10px 10px white inset;
+}
+.titulo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: linear-gradient(to right, #ff6cab, #3f5efb);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2em;
+
+}
+.produto {
+    flex: 1 1 20%;
+    background-color: #fff;
+    padding: 2%;
+    margin: 1%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 400px;
+    flex-direction: column;
+}
+.produto:hover{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.1) inset,
+    -10px -10px 10px white inset;
+}
+
+.produto img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.produto h3{
+    font-size: 1.5em;
+    margin:10px 0
+}
+.produto p{
+    font-size: 1em;
+    margin-bottom: 5px 0;
+}
+.produto button {
+    background-color: #3f5efb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #ff6cab;
+    transition-duration: 0.3s;
+}
+.contato{
+    background-color: black;
+}
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: start;
+}
+.contato p{
+    background: linear-gradient(to right, #ff6cab, #3f5efb);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2em;
+}
+footer p{
+    background: linear-gradient(to right, #ff6cab, #3f5efb);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1em;
+    text-align: center;
+}
+.icones a {
+    text-decoration: none;
+}
+@media screen and (max-width: 1023px) {
+    .container {
+        display: block;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .produto {
+        flex: 1 1 48%; 
+        margin-bottom: 2%; 
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 640px) {
+    .container{
+        display: block;
+    }
+}
+
